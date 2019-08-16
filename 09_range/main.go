@@ -6,6 +6,8 @@ func main() {
 	ids := []int{12, 454, 65, 87, 32, 9, 54, 32, 87, 543, 5}
 	// This loop has always index and the element you want to do something with
 	// If you don't use it, put _
+
+	// Range on slice.arrays
 	for i, ids := range ids {
 		fmt.Printf("at the index %d you have ID %d\n", i, ids)
 	}
@@ -22,7 +24,7 @@ func main() {
 	}
 	fmt.Println("Sum", sum)
 
-	// Range with map
+	// Range on map
 	emails := map[string]string{"Terry": "terry@gmail.com", "Antonio": "antonio@gmail.com"}
 
 	for key, value := range emails {
